@@ -25,7 +25,39 @@ Whether you want to play a quick offline match on your lunch break or challenge 
 
 ## 🛠️ How to get it up and running on your computer
 
-Running it locally is super easy. Here’s all you need to do:
+Follow these steps to get a local copy of the project up and running.
 
-1.npm install
-2.npm run dev 
+### 1. Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org) installed (version 18.x or higher recommended). Check your version by running:
+
+```bash
+node -v
+```
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com
+cd your-repo-name
+```
+
+### 3. Install Dependencies
+
+Install all the required packages listed in the `package.json` file:
+
+```bash
+npm install
+```
+
+### 4. Run the Development Server
+
+Start the project in local development mode with live-reloading:
+
+```bash
+npm run dev
+```
+
+Once started, open [http://localhost:3000](http://localhost:3000) (or the port specified in your terminal) in your browser to view the application.
+
+
