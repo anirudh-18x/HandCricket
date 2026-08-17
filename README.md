@@ -27,7 +27,5 @@ Whether you want to play a quick offline match on your lunch break or challenge 
 
 Running it locally is super easy. Here’s all you need to do:
 
-1. **Find the folder**:
-   Open your terminal (PowerShell, Command Prompt, or terminal of choice) and go to the directory:
-   ```bash
-   cd C:\Users\DELL\Projects\HandCricket
+1.npm install
+2.npm run dev 
