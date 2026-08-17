@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #F4F2EB;
+  }
+  body {
+    background-color: #F4F2EB;
+    color: #1C150C;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+  }
+  ::selection {
+    background: #9AD8B9;
+    color: #1C150C;
+  }
+}
+
+/* Fade-in utility */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbars styled to be clearly visible and match the high-contrast light theme */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F2EB;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #AFA493;
+  border: 3px solid #F4F2EB;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1E7F4E;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #AFA493 #F4F2EB;
+}
